@@ -2,17 +2,17 @@ import {
   AppShell,
   ThemeNameTags,
   RadioPage,
+  StripedBackground,
+  DefaultFooter,
+  SpanBlock,
+  /* LogoFreshPrintSvg,
   SpeakerBackgroundPlayerSvg,
   LogoSenseRadioSvg,
   SocialButtonsSvg,
-  StripedBackground,
-  DefaultFooter,
-  LogoFreshPrintSvg,
   LogoLedArtSvg,
   LogoNestMediaSvg,
-  SpanBlock,
   LogoGooglePlaySvg,
-  LogoAppStoreSvg,
+  LogoAppStoreSvg, */
 } from "@molitio/ui-core";
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -21,8 +21,9 @@ import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   return (
-    <AppShell themeName={ThemeNameTags.BLACK_YELLOW} applyGlobalStyleRules>
-      <RadioPage
+    <AppShell applyGlobalStyleRules>
+      <h1>sonic boom</h1>
+      {/*   <RadioPage
         radio={{
           playUrl:
             "https://s3.eu-west-1.amazonaws.com/filestore.molitio.org/nest-media/sense-radio/audio-store/chill-abstract-12099.mp3",
@@ -83,7 +84,7 @@ const Home: NextPage = () => {
             ]}
           />
         }
-      />
+      /> */}
     </AppShell>
   );
 };
